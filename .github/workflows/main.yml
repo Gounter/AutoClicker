@@ -40,4 +40,4 @@ jobs:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: src/dist/AutoClicker.exe
           asset_name: AutoClicker.exe
-          asset_content_type: application/exe
+          asset_content_type: application/vnd.microsoft.portable-executable
