@@ -7,8 +7,9 @@ import os
 
 def jump():
     pyautogui.keyDown('space')
-    time.sleep(randint(1, 15))
+    time.sleep(0.10)
     pyautogui.keyUp('space')
+    time.sleep(randint(1, 15))
 
 
 def clear_console():
