@@ -27,4 +27,4 @@ jobs:
       - name: Package AutoClicker
         uses: JackMcKew/pyinstaller-action-windows@main
         with:
-          path: /AutoClicker
+          path: .
