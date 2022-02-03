@@ -20,6 +20,8 @@ jobs:
         uses: JackMcKew/pyinstaller-action-windows@main
         with:
           path: src
+      - run : |
+          ls -a src/dist
       - name: Release
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
