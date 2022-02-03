@@ -19,7 +19,6 @@ def clear_console():
     os.system(command)
 
 
-
 class Jumper:
     def __init__(self):
         self.iterations = 0
