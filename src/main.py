@@ -1,7 +1,7 @@
-import gambler
+from gambler import Gambler
 import time
 import pyautogui
-import jumper
+from jumper import Jumper
 
 
 def get_position(message):
@@ -28,12 +28,12 @@ def d2_gamble():
     print("Please close the gamble shop now.")
     time.sleep(3)
 
-    gm = gambler.Gambler(merchant_position, gamble_position, item_position, 31)
+    gm = Gambler(merchant_position, gamble_position, item_position, 31)
     gm.gamble()
 
 
 def jumper_routine():
-    jp = jumper.Jumper()
+    jp = Jumper()
     jp.keep_jumping()
 
 
