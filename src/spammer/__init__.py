@@ -166,9 +166,9 @@ class Spammer:
                 if nextKey != "":
                     self.active_config["mappings"][nextKey]["ready"] = False
                     cast(nextKey)
-            time.sleep(0.5)
+            time.sleep(0.25)
             iteration += 1
-            if iteration % 5 == 0:
+            if iteration % 10 == 0:
                 for key in self.active_config["mappings"].keys():
                     self.active_config["mappings"][key]["ready"] = \
                         self.ability_ready(self.active_config["mappings"][key]["image"])
