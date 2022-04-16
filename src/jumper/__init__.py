@@ -10,7 +10,7 @@ def jump():
     pyautogui.keyDown('8')
     time.sleep(0.10)
     pyautogui.keyUp('8')
-    time.sleep(30)
+    time.sleep(randint(30, 40))
 
 
 def clear_console():
